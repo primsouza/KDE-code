@@ -10,8 +10,8 @@ public class fixKDE {
 	Point2D p = new Point2D();
 	
 	public void data() {
-		 File file = new File("./prop/input_fixKDE.txt");
-		 File fileOut = new File("./prop/fixKDE_datamodified");
+		 File file = new File("./data/input_fixKDE.txt");
+		 File fileOut = new File("./data/fixKDE_datamodified");
 		 
 		 try
 		 {
@@ -30,7 +30,7 @@ public class fixKDE {
 		     fis.close();
 		     fout.close();
 		     
-		     BufferedReader r = new BufferedReader(new FileReader("./prop/fixKDE_datamodified"));
+		     BufferedReader r = new BufferedReader(new FileReader("./data/fixKDE_datamodified"));
 		     String line = "";
 		     int aux=3;
 		     int count_line = 0;
@@ -118,7 +118,5 @@ public class fixKDE {
 			}
 			System.out.println("OUTPUT POINT " + (i+1) + ": " + output + " ");
 		}
-	}
-	
-	
+	}	
 }
